@@ -1,0 +1,171 @@
+@import 'animate.css';
+
+body {
+    
+}
+
+/* ADJUSTMENTS BOOTSTRAP */
+.navbar-default {margin-bottom: 0; }
+a { color: black; }
+.media {
+    color: black;
+    display: block;
+}
+.media:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/* COLOR PALETS */
+.darkgreen-bg { background: darkgreen ; }
+.btn-darkgreen { background: darkgreen;color: white; }
+.btn-darkred { background: #8B0000;    color: white; }
+.darkred { color: #8B0000; }
+/* END COLOR PALETS */
+
+/* LANDINGPAGE */
+.landingpage {
+    width: 100vw;
+    height: 100vh;
+}
+.bigtext {
+    font-size: 6em;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.bigtext i {
+    color: darkred;
+}
+.hockeytips-logo {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+.hockeytips-logo h1 {
+    margin-top: 5%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.description {
+    color: white;
+    font-style: italic;
+    font-size: 2em;
+}
+hr.red {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right,  rgba(139, 0, 0, 0.75), rgba(139, 0, 0, 0));
+}
+.landingspage-buttons {
+    margin-left: 10%;
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    background: black;
+    padding: 10px;
+}
+.landingpage-readmore {
+    position: absolute;
+    margin-left: -10%;
+    bottom: 10%;
+    width: 100%;
+}
+.landingpage-readmore-button {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.landingpage-preview-post {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    background-size: contain;
+    z-index: 100;
+}
+.landingspage-link,
+.landingspage-link:focus,
+.landingspage-link:hover
+{
+    color: white;
+    display: block;
+}
+/* END LANDINGPAGE */
+
+/* HELPERS TEXT */
+.text-centered {
+    text-align: center;
+}
+/* END HELPERS TEXT */
+
+/* NAVIGATION */
+.hockeytips-navigation {
+    background: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 0;
+}
+.hockeytips-navigation a,
+.hockeytips-navigation li
+{
+    color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background: rgba(10,10,10,.2);
+    color: white;
+}
+/* END NAVIGATION */
+
+/* POSTS */
+.posts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.mainImage {
+    width: 100%;
+}
+.post-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+}
+.post-subtitle {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.post-paragraph {
+    font-size: 1.2em;
+    line-height: 2em;
+}
+.post-introduction {
+    font-style: italic;
+    color: #8B0000;
+}
+
+/* END POSTS */
+
+/* POSTS ASIDE POPULAR */
+.posts-thumbnail-first {
+    position: relative;
+    display: block;
+}
+.posts-thumbnail-first-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    width: 100%;
+    background: black;
+    background: rgba(0,0,0,.5);
+    color: white;
+    padding: 5px;
+}
+.banner {
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+}
+/* END POSTS ASIDE POPULAR */

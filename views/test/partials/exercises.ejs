@@ -1,0 +1,33 @@
+<h2><i class="fa fa-graduation-cap"></i> Oefenstof</h2>
+<hr>
+<% for(var i=0; i<exercises.length;i++) {%>
+<% var exercise = exercises[i]; %>
+
+    <% if(i==0) { %>
+
+        <a class="posts-thumbnail-first" href="<%= exercise.title %>">
+            <img class="img-responsive" src="<%= exercise.image%>" alt="<%=exercise.title%>" title="<%=exercise.title%>">
+            <h4 class="posts-thumbnail-first-title"><%= exercise.title %></h4>
+        </a>
+                
+        
+    
+    <% } else { %>
+    
+        <a class="media" href="<%= exercise.url %>">
+            <div class="media-left">
+                <img class="media-object" width="64" height="64" src="<%= exercise.image%>" alt="<%=exercise.title%>" title="<%=exercise.title%>">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><%= exercise.title %></h4>
+                    <p><%= exercise.subtitle %></p>
+            </div>
+        </a>
+    
+    
+    <% } %>
+
+
+<% } %>
+
+<a class="btn btn-default btn-block btn-lg" href="">Bekijk alle oefeningen</a>

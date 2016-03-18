@@ -45,11 +45,7 @@ server.listen(port,function() {
 
 /* Routes */
 
-app.get('/', function(req, res){
-  res.send('hello');
-});
-
-//app.use('/test', require('./routes/test_routes'));
+app.use('/test', require('./routes/test_routes'));
 //app.use('/auth', require('./routes/auth_routes'));
 //require('./routes/game_routes')(app);
 //require('./routes/admin_routes')(app);

@@ -1,0 +1,26 @@
+<% for(var i=0; i<posts.length;i++) {%>
+
+
+    <h1 class="post-title"><%= posts[i].title %></h1>
+    <h2 class="post-subtitle"><%= posts[i].subtitle %></h2>
+    
+    <hr>
+    
+    <img class="mainImage" class="img-responsive" src="<%= posts[i].image %>" alt="<%= posts[i].title %>" title="<%= posts[i].title %>">
+    <p class="post-paragraph post-introduction">
+        <% include loremipsum %> 
+    </p>
+    
+    <p class="post-paragraph">
+        <% include loremipsum %> 
+    </p>
+    
+    <p>
+        <% include loremipsum %> 
+    </p>
+    
+    <div class="form-group">
+        <a class="btn btn-darkred">Lees verder... <i class="fa fa-angle-double-right"></i></a>
+    </div>
+    
+<% } %>

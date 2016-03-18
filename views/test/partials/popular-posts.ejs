@@ -1,0 +1,35 @@
+<h2><i class="fa fa-heart"></i> Populair</h2>
+<hr>    
+<% for(var i=0; i<popular_posts.length;i++) {%>
+<% var post = popular_posts[i]; %>
+
+    <% if(i==0) { %>
+
+        <a class="posts-thumbnail-first" href="<%= post.title %>">
+            <img class="img-responsive" src="<%= post.image%>" alt="<%=post.title%>" title="<%=post.title%>">
+            <h4 class="posts-thumbnail-first-title"><%= post.title %></h4>
+        </a>
+                
+        <a href="http://www.versio.nl/?pa=52878taoqr" class="banner">
+            <img src="http://www.hockeytips.eu/images/banner/versio-banner-250x60blue.gif" target="_blank" alt="banner versio" title="banner versio" target="_blank">
+        </a>
+    
+    <% } else { %>
+    
+        <a class="media" href="<%= post.url %>">
+            <div class="media-left">
+                <img class="media-object" width="64" height="64" src="<%= post.image%>" alt="<%=post.title%>" title="<%=post.title%>">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><%= post.title %></h4>
+                    <p><%= post.subtitle %></p>
+            </div>
+        </a>
+    
+    
+    <% } %>
+
+
+<% } %>
+
+<a class="btn btn-default btn-block btn-lg" href="">Bekijk alle artikelen</a>

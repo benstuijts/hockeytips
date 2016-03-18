@@ -12,9 +12,39 @@
   ga('send', 'pageview');
 
 </script>
+<% include partials/topbar-navigation %>
+<% include partials/landingpage %>
+<div class="container">
+  <% include partials/breadcrumb %>
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+        <% include partials/posts-summary %>
+        <h1>artikelen</h1>
+        <p>
+          <% include partials/loremipsum %>
+        </p>
+        <p>
+          <% include partials/loremipsum %>
+        </p>
+    </div>
+    
+    <div class="col-sm-12 col-md-4">
+      
+      <% include partials/popular-posts.ejs %>
+      <% include partials/exercises.ejs %>
+      
+      <h1>Aside information</h1>
+      <p>
+        <% include partials/loremipsum %>
+      </p>
+      
+      
+      
+    </div>
+    
+  </div>
+</div>
 
-<h1>Hello</h1>
-<% include partials/breadcrumb %>
 
 </body>
 </html>

@@ -1,0 +1,36 @@
+{
+  "name": "hockeytips",
+  "version": "1.0.0",
+  "description": "Op HockeyTips vindt je de meest actuele tips en trucs voor iedere hockeycoach of -trainer over de begeleiding en ontwikkeling van spelers, teambuilding, oefeningen, beleidsmatige zaken, tactiek en fysieke ontwikkeling.",
+  "main": "./server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benstuijts/hockeytips.git"
+  },
+  "keywords": [
+    "hockey",
+    "fieldhockey",
+    "coaching",
+    "training",
+    "teambuilding"
+  ],
+  "author": "Ben Stuijts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benstuijts/hockeytips/issues"
+  },
+  "homepage": "https://github.com/benstuijts/hockeytips#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.1"
+  }
+}
